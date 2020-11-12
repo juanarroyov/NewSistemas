@@ -28,69 +28,128 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnGet = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnPut = new System.Windows.Forms.Button();
+            this.btnPost = new System.Windows.Forms.Button();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
+            this.txtMinimo = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnGet
             // 
-            this.button1.Location = new System.Drawing.Point(40, 34);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGet.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGet.Location = new System.Drawing.Point(40, 34);
+            this.btnGet.Name = "btnGet";
+            this.btnGet.Size = new System.Drawing.Size(75, 36);
+            this.btnGet.TabIndex = 0;
+            this.btnGet.Text = "Buscar";
+            this.btnGet.UseVisualStyleBackColor = true;
+            this.btnGet.Click += new System.EventHandler(this.btnGet_Click);
             // 
-            // button2
+            // btnDelete
             // 
-            this.button2.Location = new System.Drawing.Point(689, 34);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(695, 34);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 36);
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.Text = "Borrar";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button3
+            // btnPut
             // 
-            this.button3.Location = new System.Drawing.Point(608, 34);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnPut.Location = new System.Drawing.Point(608, 34);
+            this.btnPut.Name = "btnPut";
+            this.btnPut.Size = new System.Drawing.Size(81, 36);
+            this.btnPut.TabIndex = 2;
+            this.btnPut.Text = "Actualizar";
+            this.btnPut.UseVisualStyleBackColor = true;
+            this.btnPut.Click += new System.EventHandler(this.btnPut_Click);
             // 
-            // button4
+            // btnPost
             // 
-            this.button4.Location = new System.Drawing.Point(527, 34);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPost.Location = new System.Drawing.Point(527, 34);
+            this.btnPost.Name = "btnPost";
+            this.btnPost.Size = new System.Drawing.Size(75, 36);
+            this.btnPost.TabIndex = 3;
+            this.btnPost.Text = "Agregar";
+            this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 34);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 22);
-            this.textBox1.TabIndex = 4;
+            this.txtId.Location = new System.Drawing.Point(121, 34);
+            this.txtId.Multiline = true;
+            this.txtId.Name = "txtId";
+            this.txtId.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtId.Size = new System.Drawing.Size(397, 72);
+            this.txtId.TabIndex = 4;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 197);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(758, 241);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(40, 130);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 22);
+            this.txtNombre.TabIndex = 6;
+            // 
+            // txtStock
+            // 
+            this.txtStock.Location = new System.Drawing.Point(173, 130);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(100, 22);
+            this.txtStock.TabIndex = 7;
+            // 
+            // txtMinimo
+            // 
+            this.txtMinimo.Location = new System.Drawing.Point(316, 130);
+            this.txtMinimo.Name = "txtMinimo";
+            this.txtMinimo.Size = new System.Drawing.Size(100, 22);
+            this.txtMinimo.TabIndex = 8;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(472, 126);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Bodega
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtMinimo);
+            this.Controls.Add(this.txtStock);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.btnPost);
+            this.Controls.Add(this.btnPut);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnGet);
             this.Name = "Bodega";
             this.Text = "Bodega";
+            this.Load += new System.EventHandler(this.Bodega_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,10 +157,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnGet;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnPut;
+        private System.Windows.Forms.Button btnPost;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtStock;
+        private System.Windows.Forms.TextBox txtMinimo;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
