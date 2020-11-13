@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NewSistemaSigloXXI.Modelos;
+using NewSistemaSigloXXI.Vistas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,7 @@ namespace NewSistemaSigloXXI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TotemMesa());
+            Application.Run(new Recetas());
         }
     }
 }

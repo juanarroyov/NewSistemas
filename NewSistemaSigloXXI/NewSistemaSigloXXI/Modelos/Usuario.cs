@@ -12,6 +12,6 @@ namespace NewSistemaSigloXXI.Modelos
         public string emailUsuario { get; set; }
         public string passUsuario { get; set; }
         public string estadoUsuario { get; set; }
-        public int perfil { get; set; }
+        public Perfil perfil { get; set; }
     }
 }

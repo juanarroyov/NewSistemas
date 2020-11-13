@@ -57,6 +57,7 @@
             this.Controls.Add(this.cnbMesa);
             this.Controls.Add(this.cnbEstado);
             this.Name = "TotemMesa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TotemMesa";
             this.Load += new System.EventHandler(this.TotemMesa_Load);
             this.ResumeLayout(false);

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NewSistemaSigloXXI
+namespace NewSistemaSigloXXI.Vistas
 {
     public partial class Cocina : Form
     {
@@ -17,16 +17,20 @@ namespace NewSistemaSigloXXI
             InitializeComponent();
         }
 
-        private void txtPlatos_Click(object sender, EventArgs e)
+        private void btnPlatos_Click(object sender, EventArgs e)
         {
-            Plato plato = new Plato();
-            plato.Show();
+            Platos openPage02 = new Platos();
+            this.Hide();
+            openPage02.ShowDialog();
+            this.Close();
         }
 
         private void btnReceta_Click(object sender, EventArgs e)
         {
-            Receta receta = new Receta();
-            receta.Show();
+            Recetas openPage02 = new Recetas();
+            this.Hide();
+            openPage02.ShowDialog();
+            this.Close();
         }
     }
 }

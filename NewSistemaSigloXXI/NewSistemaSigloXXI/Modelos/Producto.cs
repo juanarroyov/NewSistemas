@@ -33,7 +33,7 @@ namespace NewSistemaSigloXXI.Modelos
             }
             return string.Empty;
         }
-        public static async Task<string> Get(string id)
+        public static async Task<string> Get(int id)
         {
             using (HttpClient client = new HttpClient())
             {

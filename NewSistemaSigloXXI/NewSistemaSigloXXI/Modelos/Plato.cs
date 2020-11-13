@@ -34,7 +34,7 @@ namespace NewSistemaSigloXXI.Modelos
             }
             return string.Empty;
         }
-        public static async Task<string> Get(string id)
+        public static async Task<string> Get(int id)
         {
             using (HttpClient client = new HttpClient())
             {
@@ -131,7 +131,7 @@ namespace NewSistemaSigloXXI.Modelos
 
             //var input = new FormUrlEncodedContent(inputData);
             var input = new Plato();
-            input.idPlato = 0;
+            input.idPlato = id;
             input.nombrePlato = nombreplato;
             input.valorPlato = valorplato;
             input.tiempoPlato = tiempo;

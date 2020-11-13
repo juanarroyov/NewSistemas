@@ -13,7 +13,7 @@ namespace NewSistemaSigloXXI.Modelos
         public DateTime fechaEnt { get; set; }
         public int totalOrden { get; set; }
         public string estadoOrden { get; set; }
-        public int mesa { get; set; }
-        public int tipo { get; set; }
+        public Mesa mesa{ get; set; }
+        public TipoOrden tipo { get; set; }
     }
 }
