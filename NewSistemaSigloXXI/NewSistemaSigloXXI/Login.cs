@@ -24,6 +24,11 @@ namespace NewSistemaSigloXXI
                 Bodega bodega = new Bodega();
                 bodega.Show();
             }
+            if (txtUsuario.Text == "Cocinero")
+            {
+                Cocina cocina = new Cocina();
+                cocina.Show();
+            }
         }
     }
 }

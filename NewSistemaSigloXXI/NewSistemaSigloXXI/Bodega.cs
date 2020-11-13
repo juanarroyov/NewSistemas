@@ -78,14 +78,12 @@ namespace NewSistemaSigloXXI
 
         private async void btnPost_Click(object sender, EventArgs e)
         {
-            
+            //Inicialización de variables            
             string nombre = txtNombre.Text;
             double stock = Convert.ToDouble(txtStock.Text);
             double minimo = Convert.ToDouble(txtMinimo.Text);
             int id = Convert.ToInt32((comboBox1.SelectedItem as ComboboxItem).Value.ToString());
-            
-
-
+            //Realización metodo POST
             var responce = await RestHelper.Post(nombre, stock, minimo, id);
             txtId.Text = RestHelper.BeautifyJson(responce);
         }
@@ -134,6 +132,15 @@ namespace NewSistemaSigloXXI
             int id = Convert.ToInt32(txtId.Text);
             var responce = await DELETE(id);
             txtId.Text = RestHelper.BeautifyJson(responce);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtId.Text = "";
+            txtMinimo.Text = "";
+            txtNombre.Text = "";
+            txtStock.Text = "";
+            
         }
     }
 }

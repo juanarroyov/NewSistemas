@@ -16,7 +16,7 @@ namespace NewSistemaSigloXXI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Bodega());
+            Application.Run(new TotemMesa());
         }
     }
 }
